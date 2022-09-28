@@ -131,7 +131,7 @@ public class ClientController {
 	}
 	
 	@PostMapping(path="/product-section/products-by-merchant")
-	public String postProductsByMerchant(@RequestParam("username") String merchant, @RequestParam("pageSize") int pageSize, Model model) { 
+	public String postProductsByMerchant(@RequestParam("merchant") String merchant, @RequestParam("pageSize") int pageSize, Model model) { 
 	    return getProductsByMerchantName(0, pageSize, merchant, model); 
 	}
 	
@@ -196,4 +196,6 @@ public class ClientController {
 	public String postOrdersByUser(@RequestParam("username") String username, @RequestParam("pageSize") int pageSize, Model model) { 
 	    return getOrdersByUser(username, 0, pageSize, model); 
 	}
+	
+	
 }

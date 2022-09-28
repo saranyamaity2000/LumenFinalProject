@@ -8,9 +8,13 @@
 </head>
 <body>
 <h1 style="text-align: center;">Welcome to EcoMeco</h1>
+
+<div>
 <ul>
 	<li><a href="/product-section">Products</a></li>
 	<li><a href="/order-section">Orders</a></li>
 </ul>
+</div>
+
 </body>
 </html>
