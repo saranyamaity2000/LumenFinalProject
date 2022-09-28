@@ -23,17 +23,19 @@
    <table>
    	<thead>
    		<tr>
-   			<th>Order Id</th>
    			<th>Product Id</th>
-   			<th>Username</th>
+   			<th>Product Name</th>
+   			<th>Merchant Name</th>
+   			<th>Inventory</th>
    		</tr>
    	</thead>
    	<tbody>
-   	    <c:forEach items="${orders}" var="order">
+   	    <c:forEach items="${products}" var="product">
    	    <tr>
-   			<td>${order.orderId}</td>
-   			<td>${order.productId}</td>
-   			<td>${order.username}</td>
+   			<td>${product.productId}</td>
+   			<td>${product.productName}</td>
+   			<td>${product.merchantName}</td>
+   			<td>${product.inventory}</td>
    		</tr>
    	    </c:forEach>
    	</tbody>
@@ -50,7 +52,7 @@
        <a href="${nextPagePath}">next-page</a>
        <br>
    </c:if>
-   <a href="/order-section">Back to Order Section</a>
+   <a href="/product-section">Back to Order Section</a>
    <br>
    <a href="/">Back to Main Section</a>
    </center>

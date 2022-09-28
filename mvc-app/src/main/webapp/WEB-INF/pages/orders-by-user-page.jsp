@@ -14,6 +14,9 @@
 	margin-right: auto;
 	border-collapse: collapse;
 	}
+	a{
+	text-decoration: none;
+	}
 </style>
 </head>
 <body>
@@ -36,15 +39,21 @@
    	</tbody>
    </table>
    
-   <br>
+   dc<br>
    
    <center>
    <c:if test="${pageNo > 0}">
-       <a href="/order-section/orders-by-user/${username}/${pageNo - 1}">previous</a>
+       <a href="/order-section/orders-by-user/${username}/${pageNo - 1}/${pageSize}">previous-page</a>
+       <br>
    </c:if>
    <c:if test="${hasNextPage}">
-       <a href="/order-section/orders-by-user/${username}/${pageNo + 1}">next</a>
+       <a href="/order-section/orders-by-user/${username}/${pageNo + 1}/${pageSize}">next-page</a>
+       <br>
    </c:if>
+   
+   <a href="/order-section">Back to Order Section</a>
+   <br>
+   <a href="/">Back to Main Section</a>
    </center>
 
 </body>

@@ -27,6 +27,6 @@ public class Product {
 	 private String merchantName ; 
 	 
 	 @Column(name="inventory")
-	 private String inventory ; 
+	 private int inventory ; 
 	 
 }

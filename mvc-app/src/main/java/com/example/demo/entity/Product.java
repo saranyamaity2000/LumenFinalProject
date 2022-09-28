@@ -12,5 +12,5 @@ public class Product {
 	private int productId;
 	private String productName; 
 	private String merchantName; 
-	private int invertory;
+	private int inventory;
 }

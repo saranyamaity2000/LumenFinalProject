@@ -92,7 +92,7 @@ public class ProductController {
 		
 		URI location = ServletUriComponentsBuilder
 				.fromCurrentRequest()
-				.path("{/id}")
+				.path("list/{id}")
 				.buildAndExpand(product.getProductId())
 				.toUri();
 				

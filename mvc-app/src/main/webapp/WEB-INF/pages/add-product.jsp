@@ -10,7 +10,7 @@
 </head>
 <body>
    
-	<form:form method="post" modelAttribute="command" action="/add-product">
+	<form:form method="post" modelAttribute="command" action="/product-section/save">
         <div>
             <label>Product Id</label>
             <form:input path="productId" id="productId" />
@@ -31,5 +31,7 @@
             <input type="submit" value="Add">
         </div>
     </form:form>
+    <br>
+    <p>${message}</p>
 </body>
 </html>
